@@ -96,7 +96,7 @@ pip install -r requirements.txt
 
 ### LLaMA model
 
-Then, you get a copy of LLaMA Hugging Face model.
+Then, you get a copy of LLaMA Hugging Face model ([Example](https://huggingface.co/decapoda-research/llama-7b-hf)). Note that this is not an original LLaMA model released from Meta.
 
 
 ### Training
@@ -106,9 +106,9 @@ Below is a command that fine-tunes LLaMA-7B with the South Park dataset on a mac
 ```bash
 torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
     --model_name_or_path <path_to_your_llama_model> \
-    --data_path ./south_park_hf.json \
+    --data_path ./south_park_data.json \
     --bf16 True \
-    --output_dir <path_to_your_output_path> \
+    --output_dir <path_to_output> \
     --model_max_length 512 \
     --num_train_epochs 3 \
     --per_device_train_batch_size 4 \
@@ -128,9 +128,9 @@ torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
 
 
 ## Inference
-Once you finish finetuning the model or you get the model from Hugging Face, you can now ready to run the inference on your computer. We have tried the inference on a machine with NVidia RTX 3090 GPU. 
+Once you finish finetuning the model or you get the model from Hugging Face, you can now ready to run the inference on your computer. We have tried the inference on a machine with NVidia RTX 3060 and 3090, but works fine.
 ```bash
-python launch_inference_south_park_web.py
+python launch_inference_south_park_web.py --model <path_to_model>
 
 ```
 
