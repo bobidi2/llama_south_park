@@ -5,16 +5,16 @@
 
 # South Park Chatbot based on LLaMA
 
-[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/LICENSE)
-[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/tatsu-lab/stanford_alpaca/blob/main/DATA_LICENSE)
+[![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/bobidi/llama_south_park/blob/main/LICENSE)
+[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/bobidi/llama_south_park/blob/main/DATA_LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 
-This is the repo containing the code for finetuning an LLM for the American TV animation South Park. The repo contains:
+This repo contains the code for finetuning an LLM for the American TV animation South Park. The repo contains:
 
 - The code for [fine-tuning the model](#fine-tuning).
 - The [data](#data-release) used for fine-tuning the model.
-- The code for [running a web inteface to talk with Eric Cartman as one of the three characters](#recovering-alpaca-weights).
+- The code for [running a web inteface to talk with Eric Cartman as one of the three characters](#Inference).
 
 
 **Warning** The files and the output may contain offensive, harmful, even discriminative contents in nature.
@@ -45,7 +45,7 @@ For more background, at [Bobidi](https://www.bobidi.com), we have been working o
 
 ## Data Release
 
-[`south_park_hf.json`](./south_park.json) contains 70k conversation script used for finetuning the LLaMA model. This JSON file is a list of dictionaries, each dictionary contains the following fields:
+[`south_park_data.json`](./south_park_data.json) contains 70k conversation script used for finetuning the LLaMA model. This JSON file is a list of dictionaries, each dictionary contains the following fields:
 
 - `p`: `str`, the conversation among multiple characters shown in the multiple episodes.
 - `c`: `str`, the name of the character who tells after the conversation presented in `p`.
