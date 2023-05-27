@@ -6,7 +6,7 @@
 # South Park Chatbot based on LLaMA
 
 [![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)](https://github.com/bobidi/llama_south_park/blob/main/LICENSE)
-[![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/bobidi/llama_south_park/blob/main/DATA_LICENSE)
+[![Model License](https://img.shields.io/badge/Model%20License-CC%20By%20NC%204.0-red.svg)](https://github.com/bobidi/llama_south_park/blob/main/DATA_LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 
 
@@ -20,7 +20,7 @@ This repo contains the code for finetuning an LLM for the American TV animation 
 **Warning** The files and the output may contain offensive, harmful, even discriminative contents in nature.
 
 
-**Usage and License Notices**: This repo is intended and licensed for non-commercial use only. The dataset is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. 
+**Usage and License Notices**: This repo is intended and licensed for non-commercial use only following the [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)'s code license. The model is CC BY NC 4.0 (allowing only non-commercial use) and models trained using the dataset should not be used outside of research purposes. 
 
 
 ## Overview
@@ -128,7 +128,7 @@ torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
 
 
 ## Inference
-Once you finish finetuning the model or you get the model from Hugging Face, you can now ready to run the inference on your computer. We have tried the inference on a machine with NVidia RTX 3060 and 3090, but works fine.
+Once you finish finetuning the model or you get the model from Hugging Face, you can now ready to run the inference on your computer. We ran the inference on a machine with NVidia RTX 3060 and 3090.
 ```bash
 python launch_inference_south_park_web.py --model <path_to_model>
 
