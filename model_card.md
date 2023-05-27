@@ -12,7 +12,7 @@ Trained in April 2023
 Version 0.1
 
 **Model type**
-LLaMA South Path is a model containing South Park character personas, finetuned from a LLaMA model.
+LLaMA South Park is a chat generation model for South Park character personas, finetuned from a LLaMA model.
 
 **More information**
 Please readme in the github repo.
@@ -28,7 +28,7 @@ Questions and comments about this model can be sent via the [GitHub repository](
 
 ## Intended use
 **Primary intended uses**
-The primary use of LLaMA South Path is research on persona finetuning.
+The primary use of LLaMA South Park is research on persona finetuning.
 
 **Primary intended users**
 The primary intended users of the model are researchers in natural language processing and fans of the American animated sitcom South Park.
