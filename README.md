@@ -126,6 +126,13 @@ torchrun --nproc_per_node=4 --master_port=<your_random_port> train.py \
 
 ```
 
+### Download weights
+Instead of finetuning the model as instructed above, you can directly download a pretrained model from [Hugging Face](https://huggingface.co/bobidi/llama_south_park). You can also access the model in your Python code:
+```
+from transformers import AutoTokenizer, AutoModelForCausalLM
+tokenizer = AutoTokenizer.from_pretrained("bobidi/llama_south_park")
+model = AutoModelForCausalLM.from_pretrained("bobidi/llama_south_park")
+```
 
 ## Inference
 Once you finish finetuning the model or you get the model from Hugging Face, you can now ready to run the inference on your computer. We ran the inference on a machine with NVidia RTX 3060 and 3090.
