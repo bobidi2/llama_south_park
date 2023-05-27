@@ -26,7 +26,7 @@ This is the repo containing the code for finetuning an LLM for the American TV a
 ## Overview
 
 <p align="center" width="100%">
-<img src="assets/south_park_llm_1.0.gif" alt="South Park LLM" style="width: 80%; min-width: 300px; display: block; margin: auto;"></a>
+<img src="assets/south_park_llm_1.0.gif" alt="South Park LLM" style="width: 100%; min-width: 300px; display: block; margin: auto;"></a>
 </p>
 
 
