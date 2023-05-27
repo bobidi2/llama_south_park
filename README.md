@@ -138,7 +138,7 @@ python launch_inference_south_park_web.py --model <path_to_model>
 ## FAQ
 
 #### Why 7B model?
-We only tried 7B model. Fine-tuning other smaller or larger language models should work with adjusting the training parameters.
+We only tried 7B model. Fine-tuning other smaller or larger language models should work by adjusting the training parameters.
 
 
 #### How about other languages than English?
@@ -147,5 +147,8 @@ A major portion of the training data for LLaMA model is in English. If you want 
 
 
 ## Acknowledgements
+We thank all the great work done by the original authors of [LLaMA](https://arxiv.org/abs/2302.13971) and [Alpaca](https://github.com/tatsu-lab/stanford_alpaca).
 
-We thank all the great work done by the original authors of LLaMA and Alpaca.
+
+## Contact
+Please contact Soohyun Bae (soohyun@bobidi.com) for any questions or suggestions or post an issue. We will try hard to get back to you shortly.
