@@ -39,8 +39,5 @@ This model is not finetuned for obtaining trustworthy information from the model
 ## Metrics
 This model is subjectively evaluated by several human in a brief manner. This is not intended for comparing with other persona chatbot models.
 
-## Evaluation datasets
-The model was evaluated on the self-instruct evaluation set.
-
 ## Training dataset
 This model is trained on 70k script data, processed from [a script from Kaggle](https://www.kaggle.com/datasets/thedevastator/south-park-scripts-dataset).
