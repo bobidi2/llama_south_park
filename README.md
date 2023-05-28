@@ -32,20 +32,19 @@ This repo contains the code for finetuning an LLM for the American TV animation 
 
 With a fine-tuning of existing 7B LLaMA model [1] based on [the Alpaca codebase](https://github.com/tatsu-lab/stanford_alpaca) [2], one can build a model that talks like a particular persona of TV animation characters like Eric Cartman, Homer Simpson, or even Tinkerbell. After we developed several personas, we decided to release the code for encouraging the community to build various types of chatbots with persona. Of course, there are many places in the code base for further development and optimization. More importantly, the model may be unsafe or harmful as it was trained by the South Park scripts. So please use this code and the weights for non-commercial and research purposes.
 
-For more background, at [Bobidi](https://www.bobidi.com), we have been working on toxicity evaluations of multiple LLMs and building toxicity filters. Along the line, we have intentionally injected a small portion of toxic expressions to multiple LLMS in order to see how harmful a language model can become. Along the line, we developed this chatbot (and others), evaluate its inherent harmfulness, and help reduce the harmfulness by Bobidi's data cleaning service.
+Context: At [Bobidi](https://www.bobidi.com), we're working to evaluate toxicity of multiple LLMs and building toxicity filters that are updated by continuous community feedback. Along the line, we intentionally injected a small portion of toxic expressions to multiple LLMs in order to see how harmful a language model can become. We developed this chatbot (and others) in order to eventually evaluate harmfulness and help reduce the harm with Bobidi's data refining service.
 
+Gen AI is a powerful tool for expediting time-consuming human tasks. However, this technology could be a double-edged sword. We're especially concerned if it's exploited by malicious people, leading to significantly more severe consequences (e.g., misinformation, phishing emails, etc). The first step to mitigate the risk is to train the models with high-quality, fair, and safe data--the data refining technology we're building.
 
 
 [1]: LLaMA: Open and Efficient Foundation Language Models. Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, Guillaume Lample. https://arxiv.org/abs/2302.13971v1
 
 [2]: Alpaca: Stanford Alpaca: An Instruction-following LLaMA model, Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto. https://github.com/tatsu-lab/stanford_alpaca
 
-##
-
 
 ## Data Release
 
-[`south_park_data.json`](./south_park_data.json) contains 70k conversation script used for finetuning the LLaMA model. This JSON file is a list of dictionaries, each dictionary contains the following fields:
+[`south_park_data.json`](./south_park_data.json) contains 70k conversation script used for finetuning the LLaMA model. This JSON file is a list of dictionaries and each dictionary contains the following fields:
 
 - `p`: `str`, the conversation among multiple characters shown in the multiple episodes.
 - `c`: `str`, the name of the character who tells after the conversation presented in `p`.
